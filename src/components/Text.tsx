@@ -1,3 +1,7 @@
-export function Text({ text: string }) {
+import { useState } from "react";
+
+export function Text() {
+  const [text, setText] = useState();
+
   return <p>{text}</p>;
 }
